@@ -29,6 +29,7 @@
 
         <!-- Custom styles CSS -->
         <link href="assets/css/style.css" rel="stylesheet" media="screen">
+        <link href="assets/css/animated-headline.css" rel="stylesheet">
         <title>Wesley Huang | Web Developer</title>
     </head>
     <body>
@@ -38,9 +39,17 @@
         <section id="particles-js" class="module-image js-height-half home" >
           
             <div class="intro">
-                <div class="hello">Hello</div>
-                <h1>I am Wesley Huang</h1>
-                <div class="who-creates">creating modern and responsive design for Web and Mobile</div>
+                <div class="hello"></div>
+                <h1>Wesley Huang</h1>
+                <h3 class="cd-headline clip is-full-width" style="display:flex;">
+                  <span class="who-creates" style="margin-right: 5px;">Passion for </span>
+                  <span class="cd-words-wrapper who-creates" style="display:inline;">
+                    <b class="is-hidden">Learning</b>
+                    <b class="is-visible">Design</b>
+                    <b class="is-hidden">Programming</b>
+                  </span>
+                </h3>
+                
             </div>
 
             <div class="mouse-icon">
@@ -650,6 +659,7 @@
         <!-- Custom scripts -->
         <script src="assets/js/custom.js"></script>
         <script src="assets/js/custom-shuffle-init.js"></script>
+        <script src="assets/js/animated-headline.js"></script>
         <script src="particles.min.js"></script>
         <script src="script.js"></script>
     </body>

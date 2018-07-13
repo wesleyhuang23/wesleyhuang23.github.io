@@ -496,6 +496,13 @@ textarea.form-control {
 	padding: 0 15px;
 }
 
+@media(min-width:767px){
+	.intro{
+		left: 15%;
+		text-align: left;
+	}
+}
+
 .hello,
 .who-creates {
 	font-family: 'Montserrat', "Times New Roman", Times, serif;
@@ -503,6 +510,7 @@ textarea.form-control {
 	font-style: italic;
 	text-transform: none;
 	margin: 15px 0;
+	vertical-align: initial !important;
 }
 
 /* ---------------------------------------------- /*
