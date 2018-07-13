@@ -1,0 +1,18 @@
+body{
+  background-color: black; 
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+h1{
+  color:white; 
+  font-size: 75px; 
+  font-weight: 300; 
+  letter-spacing: 8px; 
+  text-transform:uppercase; 
+  display: block;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+}
