@@ -678,7 +678,7 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	left: 8px;
 	padding: 25px;
 	opacity: 0;
-	background: rgba(255,255,255,0.8);
+	background: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
@@ -710,13 +710,14 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 .caption-inner .portfolio-item-title {
 	font-size: 14px;
 	font-weight: 400;
+	color: white;
 }
 
 .caption-inner .portfolio-item-desc {
 	font-family: 'Montserrat', "Times New Roman", Times, serif;
 	font-style: italic;
 	font-size: 13px;
-	color: #777;
+	color: #fff;
 }
 
 .portfolio-items-container .portfolio-item:hover figcaption {
@@ -865,7 +866,9 @@ button.mfp-close {
 /* ---------------------------------------------- /*
  * Contact and Map
 /* ---------------------------------------------- */
-
+#contact{
+	background-color: #f4f4f4;
+}
 #map-section {
 	position: relative;
 	height: 450px;
@@ -886,7 +889,7 @@ button.mfp-close {
 /* ---------------------------------------------- */
 
 #footer {
-	background: #222;
+	background: #f5f5f5;
 	text-align: center;
 	padding: 40px 0;
 	color: #FFF;
