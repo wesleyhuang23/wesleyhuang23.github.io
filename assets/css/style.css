@@ -82,7 +82,7 @@ h2 {
 }
 
 h3 {
-	font-size: 13px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	margin: 0 0 5px;
 }
@@ -102,6 +102,11 @@ h6 {
 	font-size: 11px;
 	letter-spacing: 1px;
 	font-weight: 400;
+}
+p{
+	font-family: 'Montserrat', "Times New Roman", Times, serif;
+	color: black;
+	opacity: 0.5;
 }
 
 /* ---------------------------------------------- /*
@@ -797,6 +802,10 @@ button.mfp-close {
 	font-size: 16px;
 }
 
+.portfolio-slider .owl-item{
+	display: flex;
+	align-items: center;
+}
 .portfolio-slider img {
 	width: 100%;
 }
