@@ -226,6 +226,22 @@
 		// 	animation: google.maps.Animation.BOUNCE,
 		// });
 
+		(function stickyNav(){
+			var $header = $('header');
+			var offsetTop;
+			window.addEventListener('scroll', function(){
+				if(window.scrollY > $header.offset().top){
+					offsetTop = $header.offset().top;
+					$header.addClass('sticky');
+				} else if(window.scrollY < offsetTop){
+					$header.removeClass('sticky');
+				}
+			})
+		})();
+	});
+
+	particlesJS.load('particles-js', 'particles.json', function() {
+
 	});
 
 })(jQuery);
