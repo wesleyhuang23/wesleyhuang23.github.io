@@ -243,7 +243,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/1fm_k4ip7jm-jared-erondu.jpg');
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -252,11 +252,27 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
-  height: 80vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+header .container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
+  text-align: left;
+}
+header canvas{
+  
 }
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -281,17 +297,17 @@ header .intro-text .intro-heading {
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 21px;
+    line-height: 30px;
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 75px;
-    line-height: 75px;
-    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
 }
 
@@ -319,14 +335,14 @@ section h3.section-subheading {
   font-weight: 400;
   margin-bottom: 75px;
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   section {
     padding: 90px 0;
   }
   header{
     height: 80vh;
   }
-}
+} */
 .service-heading {
   margin: 15px 0;
   text-transform: none;
@@ -334,6 +350,13 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+  
+}
+.item-wrapper{
+  transition: all .6s ease-in-out;
+}
+.item-wrapper:hover{
+  box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.23);
 }
 #portfolio .portfolio-item .portfolio-link {
   display: block;

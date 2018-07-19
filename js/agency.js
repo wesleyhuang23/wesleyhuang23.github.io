@@ -2,16 +2,16 @@
 
 (function($) {
     "use strict"; // Start of use strict
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    // $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+	// 	disableOn: 700,
+	// 	type: 'iframe',
+	// 	mainClass: 'mfp-fade',
+	// 	removalDelay: 160,
+	// 	preloader: false,
 
-		fixedContentPos: false
+	// 	fixedContentPos: false
         
-	});
+	// });
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -39,18 +39,18 @@
         }
     })
 
-    $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
+    // $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+	// 	disableOn: 700,
+	// 	type: 'iframe',
+	// 	mainClass: 'mfp-fade',
+	// 	removalDelay: 160,
+	// 	preloader: false,
 
-		fixedContentPos: false
-    });
+	// 	fixedContentPos: false
+    // });
     
     particlesJS.load('particles-js', 'particles.json', function() {
 
-	});
+    });
 
 })(jQuery); // End of use strict
