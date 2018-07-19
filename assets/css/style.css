@@ -642,9 +642,10 @@ textarea.form-control {
 	display: block;
 	list-style: none;
 	overflow: hidden;
-	width: 25%;
-	width: 33.333%;
+	width: 27%;
+	/* width: 33.333%; */
 	padding: 0;
+	margin: 25px;
 }
 
 .portfolio-items-container .portfolio-item img {
@@ -941,6 +942,7 @@ button.mfp-close {
 	position: relative;
 	width: 100%;
 	z-index: 998;
+	transition: all .3s ease-in-out;
 }
 
 .navbar-custom {
@@ -1229,6 +1231,7 @@ font-size: 14px;
 .sticky{
 	position: fixed;
 	top:0;
+	box-shadow: 0 0 2px 3px rgba(0,0,0,0.1);
 }
 
 #home{
