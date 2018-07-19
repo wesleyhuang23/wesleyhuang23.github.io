@@ -47,6 +47,10 @@
 		preloader: false,
 
 		fixedContentPos: false
+    });
+    
+    particlesJS.load('particles-js', 'particles.json', function() {
+
 	});
 
 })(jQuery); // End of use strict
