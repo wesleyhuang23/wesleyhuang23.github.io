@@ -271,9 +271,6 @@ header .intro-text {
   padding-bottom: 50px;
   text-align: left;
 }
-header canvas{
-  
-}
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
@@ -315,9 +312,6 @@ header .intro-text .intro-heading {
   .shadow{
     display: none;
   }
-  header{
-    height: 40vh;
-  }
 }
 section {
   padding: 90px 0;
@@ -355,6 +349,20 @@ section h3.section-subheading {
   margin: 0 0 15px;
   right: 0;
 }
+@media (max-width: 500px){
+  .button-group{
+    display: flex;
+    flex-direction: column;
+  }
+  .button-group a{
+    margin-bottom: 16px;
+    padding: 10px 0px !important;
+  }
+  .text-muted{
+    display: none;
+  }
+}
+
 #portfolio .a{
   background-color: transparent;
   border-radius: 14px;
@@ -366,6 +374,7 @@ section h3.section-subheading {
   margin-right:10px;
   cursor: pointer;
   text-decoration: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #portfolio .a:hover{
