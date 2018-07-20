@@ -21,10 +21,17 @@ gulp.task('concatJS', function(){
 })
 
 gulp.task('minify', function(){
-    gulp.src('./css/main.css')
+    gulp.src('./styles/main.css')
     .pipe(minifyCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./styles'))
+});
+
+gulp.task('uglify', function() {
+  return gulp.src('./scripts/main.js')
+      .pipe(rename('main.min.js'))
+      .pipe(uglify())
+      .pipe(gulp.dest('./scripts'));
 });
 
 gulp.task('default', ['concatCSS', 'concatJS'], function(){
