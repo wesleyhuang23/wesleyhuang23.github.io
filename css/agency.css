@@ -347,17 +347,49 @@ section h3.section-subheading {
   margin: 15px 0;
   text-transform: none;
 }
+.img{
+  height: 211px;
+  background-size: cover;
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
-  
+}
+#portfolio .a{
+  background-color: transparent;
+  border-radius: 14px;
+  transition: all .3s ease-in-out;
+  box-shadow: initial;
+  border: 1px solid gray;
+  color: black;
+  padding: 3px 15px;
+  margin-right:10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#portfolio .a:hover{
+  background-color: rgba(254, 209, 54, 0.9);
+}
+.a:active,
+.a.is-checked {
+  background-color: rgba(254, 209, 54, 0.9) !important;
 }
 .item-wrapper{
   transition: all .6s ease-in-out;
 }
-.item-wrapper:hover{
-  box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.23);
+@media(min-width:992px){
+  .item-wrapper:hover{
+    box-shadow: 10px 10px 23px -2px rgba(0,0,0,0.23);
+  }
 }
+
+
+  .item-wrapper img{
+    display: none;
+  }
+
+
 #portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
