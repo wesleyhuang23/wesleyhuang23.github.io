@@ -325,7 +325,7 @@ section {
 section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 section h3.section-subheading {
   font-size: 16px;
@@ -774,6 +774,7 @@ ul.social-buttons li a:active {
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
   margin-top: 0;
+  list-style: none;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
