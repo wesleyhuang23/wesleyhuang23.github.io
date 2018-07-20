@@ -4,7 +4,7 @@
       "value": 70,
       "density": {
         "enable": true,
-        "value_area": 500
+        "value_area": 1100
       }
     },
     "color": {
@@ -54,7 +54,7 @@
     },
     "move": {
       "enable": true,
-      "speed": 4,
+      "speed": 2,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -70,7 +70,7 @@
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "repulse"
       },
       "onclick": {
