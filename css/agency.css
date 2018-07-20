@@ -345,6 +345,11 @@ section h3.section-subheading {
   height: 211px;
   background-size: cover;
 }
+@media(max-width:500px){
+  .img {
+    height: 200px;
+  }
+}
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -627,6 +632,11 @@ section h3.section-subheading {
     padding: 0 100px 20px 20px;
   }
 }
+@media(max-width:500px){
+  #team img{
+    width: 100%;
+  }
+}
 .team-member {
   text-align: center;
   margin-bottom: 50px;
@@ -642,6 +652,13 @@ section h3.section-subheading {
 }
 .team-member p {
   margin-top: 0;
+}
+#team p{
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+#team > div > div:nth-child(3) > div > p:nth-child(3){
+  font-size: 12px;
 }
 aside.clients img {
   margin: 50px auto;
