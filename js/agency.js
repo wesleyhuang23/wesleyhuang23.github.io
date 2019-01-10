@@ -75,16 +75,9 @@
         });
     }, 500)
 
-    $(function() {
-        $('.lazy').Lazy({
-            scrollDirection: 'vertical',
-            visibleOnly: true,
-            onError: function(element) {
-                console.log('error loading ' + element.data('src'));
-            }
-        }); 
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
     });
-    
   
 
 })(jQuery); // End of use strict
