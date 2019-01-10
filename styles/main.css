@@ -797,6 +797,12 @@ ul.social-buttons li a:active {
   margin-top: 0;
   list-style: none;
 }
+@media(max-width:500px){
+  .portfolio-modal .modal-content ul.list-inline li {
+    margin-bottom: 30px;
+    display: block;
+  }
+}
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
 }
