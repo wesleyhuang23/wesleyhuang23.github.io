@@ -74,6 +74,16 @@
             });
         });
     }, 500)
+
+    $(function() {
+        $('.lazy').Lazy({
+            scrollDirection: 'vertical',
+            visibleOnly: true,
+            onError: function(element) {
+                console.log('error loading ' + element.data('src'));
+            }
+        }); 
+    });
     
   
 
