@@ -6,7 +6,30 @@ var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var maps = require('gulp-sourcemaps');
+const gzip = require('gulp-gzip');
 
+const jsSrc = './scripts/*';
+const cssSrc = './public/css/*';
+const htmlSrc = './public/*.html';
+const imgSrc = './img/*';
+const pageSrc = './public/**/*.html';
+const fontSrc = "./resume/*";
+
+gulp.task('compressJS', function(){
+    return gulp.src(jsSrc)
+    .pipe(gzip())
+    .pipe(gulp.dest('./scripts'));
+})
+gulp.task('compressIMG', function() {
+    return gulp.src(imgSrc)
+      .pipe(gzip())
+      .pipe(gulp.dest('./img'));
+  });
+  gulp.task('compressRESUME', function() {
+    return gulp.src(fontSrc)
+      .pipe(gzip())
+      .pipe(gulp.dest('./resume'));
+  });
 gulp.task('concatCSS', function(){
     gulp.src(['./css/*.css'])
     .pipe(concat('main.css'))
@@ -40,6 +63,10 @@ gulp.task('default', ['concatCSS', 'concatJS'], function(){
 
 gulp.task('mini', ['minify'], function(){
     console.log('minifying')
+});
+
+gulp.task('compress', ['compressJS', 'compressIMG','compressRESUME'], function(){
+    console.log('compressing')
 });
 
 gulp.task('watch', function(){
